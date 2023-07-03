@@ -185,6 +185,8 @@ function App() {
                 </div>
 
                 <div>
+                <img src='assets/dollar.svg' className="icon-input" alt="icon"></img>
+
                   <input
                     placeholder="0"
                     className={ErrorA && !Number ? "input-inv" : "input"}
@@ -233,9 +235,10 @@ function App() {
                   </div>
 
                   <div>
+                  <img src='assets/person.svg' className="icon-input"  alt="icon"></img>
                     <input
                       placeholder="0"
-                      className={ErrorB && !Person ? "input-inv" : "input-icon"}
+                      className={ErrorB && !Person ? "input-inv" : "input"}
                       onKeyUp={handleKeyUpPerson}
                       value={Person}
                       onChange={(e) => setPerson(e.target.value)}

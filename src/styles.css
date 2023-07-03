@@ -4,6 +4,7 @@ body{
     box-sizing: border-box;
     font-family: 'Inconsolata', monospace;
     background-color: hsl(185, 41%, 84%);
+    font-family: 'IBM Plex Mono', monospace;
  }
 
 .content{
@@ -78,41 +79,19 @@ body{
     font-size: 18px;
     font-weight: bold;
     text-align: right;
-}
-.input-icon{
-    width: 100%;
-    height: 30px;
-    border: none;
-    background-color: hsl(189, 41%, 97%);
-    border-radius: 5px;
-    cursor: pointer;
-    color:  hsl(183, 100%, 15%);
-    font-size: 18px;
-    font-weight: bold;
-    text-align: right;
+
 }
 .input::placeholder{
-        background-image: url(../public/assets/dollar.svg);
-        background-repeat: no-repeat;
-        background-position: left center;
-        padding: 5px;
-        opacity: 0.8;
+    opacity: 0.6;
+    font-family: 'IBM Plex Mono', monospace;
 }
 
-.input-icon::placeholder{
- background-image: url(../public/assets/person.svg);
- background-repeat: no-repeat;
- background-position: left center;
- padding: 5px;
- opacity: 0.8;
+.icon-input{
+    position: absolute;
+    margin: 8px ;
 }
 
 .input:focus{
-    outline: none;
-    border: 1px solid hsl(172, 67%, 45%);
-}
-
-.input-icon:focus{
     outline: none;
     border: 1px solid hsl(172, 67%, 45%);
 }
@@ -142,8 +121,8 @@ p{
     opacity: 0.6;
     display: flex;
    justify-content: space-between;
-   
 }
+
 .content-btn{
     width: 100%;
     height: 100px;
@@ -297,7 +276,7 @@ background-color:  hsl(172, 67%, 45%);
     }
 
     .content-btn{
-        height: 150px;
+        height: 170px;
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -316,4 +295,8 @@ background-color:  hsl(172, 67%, 45%);
     height: 40px;
     margin-top: 40px;
    }
+
+   .content-span{
+    margin: 10px 0 5px 0;
+}
 }
